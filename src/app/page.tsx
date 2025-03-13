@@ -174,7 +174,7 @@ export default function LandingPage() {
           <section className="bg-white w-full text-white py-16">
             <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row items-center justify-between px-4">
               {/* Left Side: Image */}
-              <div className="flex-shrink-0 w-full md:w-1/3 flex items-center justify-center relative lg:h-[25vw] lg:w-[25vw] h-[40vw] w-[40vw] mb-4 md:mb-0 md:h-[300px]">
+              <div className="hidden lg:block flex-shrink-0 w-full md:w-1/3 flex items-center justify-center relative lg:h-[25vw] lg:w-[25vw] mb-4 md:mb-0 md:h-[300px]">
                 <Image
                   src={require("../../public/images/logo.png") } // Use a relative path from the 'public' directory
                   alt="House with a plus sign"

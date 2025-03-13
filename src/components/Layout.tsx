@@ -8,6 +8,8 @@ import Logo from '../../public/images/logo.svg';
 import Link from "next/link";
 import { Phone, Mail, MapPin, Facebook } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';  // Import ContactForm component
+import Script from 'next/script'
+import { Analytics } from '@vercel/analytics/next';
 
 interface LayoutProps {
   children: ReactNode;
@@ -44,7 +46,29 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   };
 
   return (
+    
     <div className="flex-grow flex flex-col w-full">
+          <>
+      {/* Google tag (gtag.js) */}
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-16928080676"
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-16928080676');
+          `,
+        }}
+      />
+    </>
+    <Analytics />
       {/* Upper Navbar */}
       {/* <nav className="w-full bg-[#E1C692] py-1 contact-bar flex items-center justify-center">
         <div className="px-8 flex max-w-[1280px] mx-auto w-full flex-row items-center justify-center">
