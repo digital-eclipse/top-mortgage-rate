@@ -9,7 +9,6 @@ import Link from "next/link";
 import { Phone, Mail, MapPin, Facebook } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';  // Import ContactForm component
 import Script from 'next/script'
-import { Analytics } from '@vercel/analytics/next';
 
 interface LayoutProps {
   children: ReactNode;
@@ -68,7 +67,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         }}
       />
     </>
-    <Analytics />
       {/* Upper Navbar */}
       {/* <nav className="w-full bg-[#E1C692] py-1 contact-bar flex items-center justify-center">
         <div className="px-8 flex max-w-[1280px] mx-auto w-full flex-row items-center justify-center">

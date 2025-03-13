@@ -2,9 +2,11 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Layout from '@/components/Layout';
 import { ReCaptchaProvider } from "next-recaptcha-v3";
+import { Analytics } from '@vercel/analytics/next'
+
 export const metadata: Metadata = {
   title: 'Top Mortgage Rate',
-  description: 'Find the best mortgage rates in the GTA. Our experts help you secure competitive rates and personalized solutions. Start your home journey today!',
+  description: 'Find the best mortgage rates. Our experts help you secure competitive rates and personalized solutions. Start your home journey today!',
   icons: {
     icon: '/icons/logo.png',
   },
@@ -29,6 +31,7 @@ export default function RootLayout({
               <Layout>
 
                 {children}
+              <Analytics />
               </Layout>
             </ReCaptchaProvider>
 
