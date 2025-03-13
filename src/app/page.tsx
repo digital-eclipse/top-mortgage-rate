@@ -72,14 +72,14 @@ export default function LandingPage() {
     {/* Landing Page Content */}
     <div className="bg-white text-black lg:p-[2vw] w-full h-full font-helvetica">
       <div className="flex justify-center items-center flex-col gap-[1vw]">
-        <div className="text-6xl font-bold">Find The Best Mortgage Rates Around</div>
-        <div className="text-4xl font-bold">Schedule A Free Consultation Today!</div>
+        <div className="text-6xl font-bold max-md:py-[8vw]">Find The Best Mortgage Rates Around</div>
+        <div className="text-4xl font-bold max-md:py-[4vw]">Schedule A Free Consultation Today!</div>
         
         {/* Buttons Div */}
-        <div className="flex flex-row gap-[3vw] pt-[2vw]">
+        <div className="flex lg:flex-row flex-col gap-[3vw] pt-[2vw]">
           {/* Button 1 */}
           <div
-            className="flex flex-col items-center justify-center bg-[#083784] text-white text-4xl px-[2vw] py-[2vw] rounded-3xl border-2 border-[#083784] hover:bg-white hover:text-[#083784] hover:border-2 hover:border-[#083784] transform-gpu origin-center transition-all duration-300 hover:cursor-pointer"
+            className="flex flex-col items-center justify-center bg-[#083784] text-white text-4xl px-[2vw] lg:py-[2vw] py-[8vw] rounded-3xl border-2 border-[#083784] hover:bg-white hover:text-[#083784] hover:border-2 hover:border-[#083784] transform-gpu origin-center transition-all duration-300 hover:cursor-pointer"
             onClick={handleButtonClick}
           >
             <HousePlus size={40} className="text-2xl mb-2" />
@@ -88,7 +88,7 @@ export default function LandingPage() {
 
           {/* Button 2 */}
           <div
-            className="flex flex-col items-center justify-center bg-[#083784] text-white text-4xl px-[2vw] py-[2vw] rounded-3xl hover:bg-white hover:text-[#083784] hover:border-2 hover:border-[#083784] transform-gpu origin-center transition-all duration-300 hover:cursor-pointer"
+            className="flex flex-col items-center justify-center bg-[#083784] text-white lg:text-4xl text-3xl px-[2vw] lg:py-[2vw] py-[9.5vw] rounded-3xl hover:bg-white hover:text-[#083784] hover:border-2 hover:border-[#083784] transform-gpu origin-center transition-all duration-300 hover:cursor-pointer"
             onClick={handleButtonClick}
           >
             <RefreshCw size={40} className="text-2xl mb-2" />
@@ -174,7 +174,7 @@ export default function LandingPage() {
           <section className="bg-white w-full text-white py-16">
             <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row items-center justify-between px-4">
               {/* Left Side: Image */}
-              <div className="flex-shrink-0 w-full md:w-1/3 flex items-center justify-center relative h-[200px] mb-4 md:mb-0 md:h-[300px]">
+              <div className="flex-shrink-0 w-full md:w-1/3 flex items-center justify-center relative lg:h-[25vw] lg:w-[25vw] h-[40vw] w-[40vw] mb-4 md:mb-0 md:h-[300px]">
                 <Image
                   src={require("../../public/images/logo.png") } // Use a relative path from the 'public' directory
                   alt="House with a plus sign"

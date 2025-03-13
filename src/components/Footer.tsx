@@ -26,7 +26,6 @@ const Footer = () => {
 
   return (
     <div>
-      Hi
     </div>
     // <section className="Footer w-full py-10 flex flex-col justify-center items-center border-t border-[#000000]">
     //   <div className="w-full max-w-[1000px] mx-auto flex flex-col md:flex-row justify-between items-start px-4 space-y-6 md:space-y-0">

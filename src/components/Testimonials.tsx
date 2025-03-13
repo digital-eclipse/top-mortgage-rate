@@ -123,7 +123,7 @@ export default function ReviewsSection() {
         {/* Grid that changes from 1 item on mobile to 3 items on desktop */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {reviews.slice(currentIndex, currentIndex + (windowWidth && windowWidth < 768 ? 1 : 3)).map((review, index) => (
-            <div key={index} className="review-card p-4 shadow-md rounded-md max-w-xs border-gray border flex flex-col justify-between min-h-[8vw] max-h-[8vw]"> {/* Fixed height */}
+            <div key={index} className="review-card p-4 shadow-md rounded-md max-w-xs border-gray border flex flex-col justify-between lg:min-h-[8vw] max-h[8vw] lg:max-h-[8vw]"> {/* Fixed height */}
               <div className="flex items-center mb-1">
                 {renderSmallStars(review.rating)}
               </div>
